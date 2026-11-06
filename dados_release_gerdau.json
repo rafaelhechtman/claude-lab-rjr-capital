@@ -1,0 +1,36 @@
+{
+  "_aviso": "DADOS FORA DO ITR. Vêm da apresentação de resultados do 3T26 da Gerdau (6-K, Exhibit 99.1, 27/10/2026), lida por texto extraído. Receita e EBITDA por segmento dessa apresentação batem com o ITR (págs. 72), o que valida a leitura das colunas, mas os itens abaixo NÃO passaram pelo verificar_numeros.py. Conferir no slide original antes de publicar. 'slide' = numeração da própria apresentação.",
+  "fonte_url": "https://www.sec.gov/Archives/edgar/data/0001073404/000110465926118998/tm2628297d3_ex99-1.htm",
+  "volumes_mil_t": {
+    "Brasil": {"3T26": 1351, "2T26": 1352, "3T25": 1582, "slide": 9},
+    "América do Norte": {"3T26": 1313, "2T26": 1347, "3T25": 1293, "slide": 11},
+    "América do Sul": {"3T26": 309, "2T26": 282, "3T25": 289, "slide": 12}
+  },
+  "portfolio_aproximado": {
+    "_nota": "A apresentação diz que as participações são aproximadas e não se referem aos volumes do 3T26.",
+    "Brasil": {"aco_longo": 0.70, "aco_plano": 0.30, "mercados": "~45% indústria, agro e outros; ~40% construção civil; ~15% automotivo", "slide": 9},
+    "América do Norte": {"aco_longo": 1.0, "mercados": "~40% construção não residencial e infraestrutura; ~60% manufatura, energia e automotivo", "slide": 11},
+    "América do Sul": {"aco_longo": 1.0, "mercados": "~70% distribuição (semiacabados); ~20% construção civil; ~10% indústria", "slide": 12}
+  },
+  "america_do_norte": {
+    "receita_por_t_em_dolar_var_TT_pct": 4.7,
+    "carteira_de_pedidos": "acima das médias históricas, sustentada por construção não residencial, data centers e energia renovável",
+    "slide": 11
+  },
+  "brasil_mercado": {
+    "vendas_mercado_interno_var_TT_pct": 5.9,
+    "_nota_volume": "O release diz que o volume do Brasil ficou estável contra o 2T26 porque o aumento de 5,9% no mercado interno (principalmente aço plano) compensou a exportação menor. A causa da queda contra o 3T25 NÃO está no documento lido.",
+    "importacoes_var_TT_pct": 19.8,
+    "importacoes_aco_plano_var_TT_pct": 33.8,
+    "consumo_aparente_var_TT_pct": 6.3,
+    "penetracao_importados_9M26_pct": {"plano": 21.6, "longo": 13.5, "total": 18.5, "_nota": "ordem das três séries (plano, longo, total) inferida do texto extraído; conferir no gráfico"},
+    "slide": 10
+  },
+  "balanco": {"alavancagem_dívida_líquida_EBITDA_x": 0.58, "fluxo_de_caixa_livre_3T26_R$_bi": 1.4, "politica": "dívida bruta < R$ 12 bi; prazo médio > 6 anos; dívida líquida/EBITDA <= 1,5x", "slide": 15},
+  "perspectiva_4T26": {
+    "_nota": "A própria apresentação diz que não constitui guidance.",
+    "América do Norte": "margem estável; menos volume e sucata mais cara (sazonal); carteira sólida (energia renovável e data centers); preços mais altos; parada programada em Midlothian; negociações do USMCA em curso, sem indicação concreta de mudança nas tarifas de aço",
+    "Brasil": "compressão de margem; desaceleração sazonal da demanda interna e mais exportação (mix pior); pressão de preço com insumos caros (principalmente carvão); início do projeto de mineração Miguel Burnier; avanço das medidas de defesa comercial (antidumping em bobinas a quente e fio-máquina); acompanhar consumo aparente pressionado por inflação e juros altos",
+    "slide": 5
+  }
+}

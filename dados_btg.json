@@ -1,0 +1,96 @@
+{
+  "_aviso": "FONTE EXTERNA: relatórios de equity research da BTG Pactual (Gerdau, 26/10/2026; Usiminas, 30/10/2026), lidos de PDFs salvos pelo usuário. Não passam pelo verificar_numeros.py. Recomendações e preços-alvo foram deliberadamente ignorados (fora do escopo do case). Números marcados 'confere' foram cruzados com o ITR ou o release.",
+  "tabelas_pagina_3_lidas_da_imagem": {
+    "_nota": "Tabelas 'reportado x estimado' das páginas 3, que são imagens. Leitura visual; conferir no PDF. Colunas: 3T26, 2T26, 3T25.",
+    "gerdau": {
+      "volumes_mil_t": {
+        "Brasil mercado interno": [1179, 1113, 1252],
+        "Brasil exportação": [172, 239, 330],
+        "Brasil total": [1351, 1352, 1582],
+        "América do Norte": [1313, 1347, 1293],
+        "América Latina": [309, 282, 289],
+        "Total": [2914, 2908, 3087]
+      },
+      "precos": {
+        "Brasil mercado interno R$/t": [5310, 5224, 5217],
+        "Brasil exportação R$/t": [4000, 3645, 3528],
+        "América do Norte US$/t": [1570, 1489, 1321],
+        "América Latina US$/t": [912, 898, 887]
+      },
+      "margem_ebitda_pct": {"Brasil": [10.7, 10.5, 9.9], "América do Norte": [27.7, 25.7, 19.8], "América Latina": [11.1, 16.0, 17.0]},
+      "resultado_financeiro_R$_mi": [-431, -308, -223],
+      "dívida_líquida_R$_mi": [7686, 8118, 8770],
+      "alavancagem_x": [0.6, 0.7, 0.9],
+      "BRL_USD_medio": [5.14, 5.05, 5.38]
+    },
+    "usiminas": {
+      "siderurgia_EBITDA_recorrente_R$_mi": [538, 688, 308],
+      "siderurgia_volume_mil_t": {"total": [1034, 989, 1104], "mercado interno": [979, 930, 991], "exportação": [55, 59, 112]},
+      "siderurgia_receita_por_t_R$": {"total": [5426, 5443, 5240], "mercado interno": [5412, 5446, 5277]},
+      "siderurgia_custo_por_t_R$": [4850, 4737, 4982],
+      "mineração_EBITDA_R$_mi": [19, 71, 130],
+      "mineração_volume_Mt": [2.0, 2.5, 2.5],
+      "mineração_preço_US$_por_t_úmida": [64.5, 68, 70],
+      "mineração_custo_caixa_US$_por_t": [23.8, 24.3, 23.7],
+      "BRL_USD_medio": [5.14, 5.15, 5.45]
+    }
+  },
+  "gerdau": {
+    "america_do_norte": {
+      "preco_realizado_usd_por_t": 1570,
+      "preco_var_TT_pct": 5,
+      "preco_var_AA_pct": 19,
+      "vendas_mil_t": 1310,
+      "vendas_var_TT_pct": -3,
+      "margem_ebitda_pct": 27.7,
+      "margem_var_AA_pp": 7.89,
+      "confere": "margem e volume batem com ITR e release"
+    },
+    "brasil": {
+      "mercado_interno_mil_t": 1180,
+      "mercado_interno_var_TT_pct": 6,
+      "exportacao_mil_t": 172,
+      "exportacao_var_TT_pct": -28,
+      "preco_mercado_interno_var_TT_pct": 2,
+      "nota_exportacao": "A BTG liga a queda da exportação à decisão estratégica da Gerdau de reduzir volumes exportados do Brasil. Não abre a variação contra o 3T25.",
+      "confere": "1.180 + 172 = 1.352 mil t, igual ao total do release (1.351)"
+    },
+    "carteira_de_pedidos_america_do_norte": "acima de 100 dias (o release da Gerdau diz só 'acima das médias históricas')",
+    "fluxo_de_caixa_livre_R$_bi": 1.44,
+    "capex_R$_bi": 1.1,
+    "dívida_líquida_R$_bi": 7.69,
+    "dívida_líquida_2T26_R$_bi": 8.12,
+    "alavancagem_x": 0.6,
+    "participacao_EUA_no_EBITDA_pct": 75,
+    "sensibilidade_cambial": "depreciação de 10% do real aumentaria o EBITDA em ~15% (análise da BTG)",
+    "projetos": "Midlothian em fase final, início esperado até o fim do ano, com novas paradas programadas no 4T26; Miguel Burnier em testes finais, início no 4T26",
+    "confere": "dívida líquida de R$ 7,69 bi bate com o nosso cálculo (R$ 7.685,8 mi); FCF e capex batem com o release"
+  },
+  "usiminas": {
+    "siderurgia": {
+      "ebitda_R$_mi": 538,
+      "ebitda_var_TT_pct": -22,
+      "ebitda_var_AA_pct": 75,
+      "margem_pct": 9.6,
+      "vendas_mil_t": 1034,
+      "preco_realizado_R$_por_t": 5426,
+      "cogs_R$_por_t": 4850,
+      "cogs_var_TT_pct": 2,
+      "confere": "preço de R$ 5.426/t e custo de R$ 4.849/t batem com o ITR e com o nosso cálculo"
+    },
+    "mineracao": {
+      "ebitda_R$_mi": 19,
+      "ebitda_var_TT_pct": -73,
+      "margem_pct": 3,
+      "vendas_Mt": 2.0,
+      "preco_realizado_usd_por_t_umido": 64.5,
+      "preco_var_TT_pct": -6,
+      "custo_caixa_usd_por_t": 23.8,
+      "nota": "preço realizado pressionado por frete mais alto; usina de beneficiamento suspensa temporariamente; preço do minério piorou mais no 4T26"
+    },
+    "fluxo_de_caixa_livre_R$_mi": -36,
+    "capital_de_giro_consumo_R$_mi": 403,
+    "caixa_liquido_R$_mi": 471,
+    "perspectiva_4T26": "deterioração sequencial moderada no aço (mix mais fraco, custos contínuos) e menos venda de minério; a BTG vê espaço limitado de recuperação no curto prazo pela concorrência de importados"
+  }
+}
